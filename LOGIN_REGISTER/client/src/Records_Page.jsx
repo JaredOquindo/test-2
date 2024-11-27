@@ -4,23 +4,24 @@ import '../src/Records_Page.css';
 import Home_Page from './Home_Page';
 function Records_Page(){
 
+    const navigate = useNavigate();
     return (
-        <div className="container">
+        <div className="RecordsPage_Container">
             {/* logo */}
-            <div className="logo">
+            <div className="RecordsPage_Logo">
                 <img src="violet_logo.png" alt="GymBro_logo" />
             </div>
 
             {/* main layout */}
-            <div className="layout">
+            <div className="RecordsPage_Layout">
                 {/* sidebar */}
                 <nav className="SideBar">
                     <ul className="navlinks">
                         <li>
-                            <a href="urgym.html">
-                                <img src="urgym.png" alt="Your Gyms" className="nav-icon" />
+                            <Link to ="/Home_Page">
+                                <img src="urgym.png" alt="Your Gyms" className="HomePage_NavigationIcon" />
                                 Your Gyms
-                            </a>
+                            </Link>
                         </li>
                         <li>
                             <a href="../bookmarks/bookmarks.html">
@@ -57,25 +58,25 @@ function Records_Page(){
                 </nav>
 
                 {/* main content */}
-                <div className="main-content">
-                    <button className="back-button">
+                <div className="RecordsPage_MainContent">
+                    <button className="RecordsPage_BackButton" onClick={() => navigate('/Home_Page')}>
                         <img src="arrow-left.png" alt="Back" />
                         Back
                     </button>
                     <h1>Records Page</h1>
 
                     {/* gym details box */}
-                    <div className="gym-info-box">
-                        <span className="gym-name">Anytime Fitness</span>
-                        <div className="location">
-                            <img src="loc-icon.png" alt="Location Icon" className="location-icon" />
-                            <span className="gym-location">Ayala Malls, Legazpi</span>
+                    <div className="RecordsPage_GymInfoBox">
+                        <span className="RecordsPage_GymName">Anytime Fitness</span>
+                        <div className="RecordsPage_Location">
+                            <img src="loc-icon.png" alt="Location Icon" className="RecordsPage_LocationIcon" />
+                            <span className="RecordsPage_GymLocation">Ayala Malls, Legazpi</span>
                         </div>
                     </div>
 
                     {/* search bar and selected date */}
-                    <div className="search-date-container">
-                        <input type="text" placeholder="Search Name" className="search-bar" />
+                    <div className="RecordsPage_SearchDateContainer">
+                        <input type="text" placeholder="Search Name" className="RecordsPage_SearchBar" />
                         {/* date recorder */}
                         <div className="display-selected">
                             <p className="selected"></p>

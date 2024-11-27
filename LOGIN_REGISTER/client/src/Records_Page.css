@@ -14,24 +14,24 @@ body {
     height: 100%;
 }
 
-.container {
+.RecordsPage_Container {
     display: flex;
     flex-direction: column;
     height: 100vh;
 }
 
-.logo {
+.RecordsPage_Logo{
     width: 100%;
     display: flex;
     margin-top: -10px;
 }
 
-.logo img {
+.RecordsPage_Logo img {
     max-width: 20%; 
     height: auto;
 }
 
-.layout {
+.RecordsPage_Layout {
     display: flex;
     width: 100%;
     height: 100%;
@@ -96,7 +96,7 @@ body {
 }
 
 /* Main content column */
-.main-content {
+.RecordsPage_MainContent {
     flex: 1; 
     padding: 20px;
     height: 100vh;
@@ -106,7 +106,7 @@ body {
     border-right: 1px solid #321F59;
 }
 
-.back-button {
+.RecordsPage_BackButton {
     padding: 10px;
     border: none; 
     border-radius: 4px; 
@@ -117,7 +117,7 @@ body {
     margin-left: -40px;
 }
 
-.back-button img {
+.RecordsPage_BackButton img {
     width: 20px; 
     height: auto;
     margin-right: 5px;
@@ -125,12 +125,12 @@ body {
 }
 
 /* title page */
-.main-content h1{
+.RecordsPage_MainContent h1{
     color: #3C3181;
     margin-top: 5px;
     margin-bottom: 10px;
 }
-.gym-info-box {
+.RecordsPage_GymInfoBox {
     padding: 20px;
     border: 1px solid #ccc;
     margin-bottom: 20px;
@@ -138,35 +138,35 @@ body {
     color: white;
 }
 
-.gym-name {
+.RecordsPage_GymName {
     font-size: 25px; 
     display: block;
 }
 
-.location-icon {
+.RecordsPage_LocationIcon {
     width: 25px; 
     height: auto;  
 }
 
-.gym-info-box span {
+.RecordsPage_GymInfoBox span {
     color: white
 }
 
 /* search bar and date line */
-.search-date-container {
+.RecordsPage_SearchDateContainer {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
 }
 
-.search-bar {
+.RecordsPage_SearchBar {
     display: flex;
     align-items: center;
     gap: 10px; 
     margin-bottom: 20px;
 }
 
-.search-date-container input {
+.RecordsPage_SearchDateContainer input {
     width: 300px;
     padding: 10px;
     border-radius: 10px;
