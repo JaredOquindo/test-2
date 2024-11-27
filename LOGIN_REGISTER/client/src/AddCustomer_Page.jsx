@@ -2,9 +2,10 @@ import React from "react";
 import { Link, Navigate, useNavigate } from "react-router-dom";
 import '../src/AddCustomer_Page.css';
 function AddCustomer_Page(){
+  const navigate = useNavigate();
     return (
         <div className="container">
-          <div className="logo">
+          <div className="AddCustomerPage_Logo">
             <img src="violet_logo.png" alt="GymBro_logo" />
           </div>
     
@@ -13,14 +14,10 @@ function AddCustomer_Page(){
             <nav className="SideBar">
               <ul className="navlinks">
                 <li>
-                  <a href="../YourGym/urgym.html">
-                    <img
-                      src="urgym.png"
-                      alt="Your Gyms"
-                      className="nav-icon"
-                    />
-                    Your Gyms
-                  </a>
+                    <Link to ="/Home_Page">
+                      <img src="urgym.png" alt="Your Gyms" className="HomePage_NavigationIcon" />
+                      Your Gyms
+                    </Link>
                 </li>
                 <li>
                   <a href="../bookmarks/bookmarks.html">
@@ -43,14 +40,10 @@ function AddCustomer_Page(){
                   </a>
                 </li>
                 <li>
-                  <a href="customers-page.html">
-                    <img
-                      src="customers.png"
-                      alt="Customers"
-                      className="nav-icon"
-                    />
-                    Customers
-                  </a>
+                    <Link to={'/Customers_Page'}>
+                      <img src="customers.png" alt="Customers" className="HomePage_NavigationIcon" />
+                      Customers
+                    </Link>
                 </li>
                 <li>
                   <a href="#">
@@ -77,17 +70,17 @@ function AddCustomer_Page(){
             </nav>
     
             {/* Form for adding a customer */}
-            <div className="main-content">
-              <button id="goBackButton">
+            <div className="AddCustomerPage_MainContent">
+              <button id="goBackButton" onClick={() => navigate('/Customers_Page')}>
                 <img
                   src="arrow-left.png"
                   alt="Back Icon"
-                  className="button-icon"
+                  className="AddCustomerPage_ButtonIcon"
                 />
                 Back
               </button>
-              <h1>Add New Customer</h1>
-              <form className="newCustomer-form">
+              <h1 className="AddCustomerPage_H1">Add New Customer</h1>
+              <form className="AddCustomerPage_NewCustomerForm">
                 <input
                   type="text"
                   name="fullname"
@@ -144,7 +137,7 @@ function AddCustomer_Page(){
                   </div>
                 </div>
     
-                <div className="button-container">
+                <div className="AddCustomerPage_ButtonContainer">
                   <button type="submit">Confirm</button>
                   <button type="button" id="cancelButton">
                     Cancel
