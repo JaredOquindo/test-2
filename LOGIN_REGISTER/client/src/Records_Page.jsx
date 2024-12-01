@@ -17,40 +17,40 @@ function Records_Page(){
                 {/* sidebar */}
                 <nav className="SideBar">
                     <ul className="navlinks">
-                        <li>
+                    <li>
                             <Link to ="/Home_Page">
                                 <img src="urgym.png" alt="Your Gyms" className="HomePage_NavigationIcon" />
                                 Your Gyms
                             </Link>
                         </li>
                         <li>
-                            <a href="../bookmarks/bookmarks.html">
-                                <img src="bookmark.png" alt="Bookmarks" className="nav-icon" />
+                            <Link to ={'/Bookmark_Page'}>
+                                <img src="bookmark.png" alt="Bookmarks" className="HomePage_NavigationIcon" />
                                 Bookmarks
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="../insights/insights.html">
-                                <img src="insight.png" alt="Insights" className="nav-icon" />
+                            <Link to={'/Insights_Page'}>
+                                <img src="insight.png" alt="Insights" className="HomePage_NavigationIcon" />
                                 Insights
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="../customers/customers-page.html">
-                                <img src="customers.png" alt="Customers" className="nav-icon" />
+                            <Link to={'/Customers_Page'}>
+                                <img src="customers.png" alt="Customers" className="HomePage_NavigationIcon" />
                                 Customers
-                            </a>
+                            </Link>
                         </li>
                         <li>
                             <a href="#">
-                                <img src="logout.png" alt="Logout" className="nav-icon" />
+                                <img src="logout.png" alt="Logout" className="HomePage_NavigationIcon" />
                                 Logout
                             </a>
                         </li>
                     </ul>
 
                     <div className="userinfo">
-                        <a href="profile.html" className="userAcc">
+                        <a className="userAcc">
                             <img src="useravatar.png" alt="User Profile" className="user-avatar" />
                             <span>Juan Dela Cruz</span>
                         </a>

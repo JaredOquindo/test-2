@@ -39,40 +39,40 @@ function AddGym_Page() {
             <div className="AddGymPage_ContentWrapper">
                 <nav className="AddGymPage_SideBar">         
                     <ul className="AddGymPage_NavigationLinks">
-                        <li>
+                    <li>
                             <Link to ="/Home_Page">
                                 <img src="urgym.png" alt="Your Gyms" className="HomePage_NavigationIcon" />
                                 Your Gyms
                             </Link>
                         </li>
                         <li>
-                            <a href="../bookmarks/bookmarks.html">
-                                <img src="bookmark.png" alt="Bookmarks" className="AddGymPage_NavigationIcon" />
+                            <Link to ={'/Bookmark_Page'}>
+                                <img src="bookmark.png" alt="Bookmarks" className="HomePage_NavigationIcon" />
                                 Bookmarks
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="../insights/insights.html">
-                                <img src="insight.png" alt="Insights" className="AddGymPage_NavigationIcon" />
+                            <Link to={'/Insights_Page'}>
+                                <img src="insight.png" alt="Insights" className="HomePage_NavigationIcon" />
                                 Insights
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="../customers/customers-page.html">
-                                <img src="customers.png" alt="Customers" className="AddGymPage_NavigationIcon" />
+                            <Link to={'/Customers_Page'}>
+                                <img src="customers.png" alt="Customers" className="HomePage_NavigationIcon" />
                                 Customers
-                            </a>
+                            </Link>
                         </li>
                         <li>
                             <a href="#">
-                                <img src="logout.png" alt="Logout" className="AddGymPage_NavigationIcon" />
+                                <img src="logout.png" alt="Logout" className="HomePage_NavigationIcon" />
                                 Logout
                             </a>
                         </li>
                     </ul>            
 
                     <div className="AddGymPage_UserInfo">
-                        <a href="profile.html" className="AddGymPage_UserAccount">
+                        <a className="AddGymPage_UserAccount">
                             <img src="useravatar.png" alt="User Profile" className="AddGymPage_UserAvatar" />
                             <span>Juan Dela Cruz</span>
                         </a>

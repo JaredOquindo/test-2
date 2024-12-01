@@ -24,16 +24,16 @@ function Home_Page() {
                             </Link>
                         </li>
                         <li>
-                            <a href="../bookmarks/bookmarks.html">
+                            <Link to ={'/Bookmark_Page'}>
                                 <img src="bookmark.png" alt="Bookmarks" className="HomePage_NavigationIcon" />
                                 Bookmarks
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="../insights/insights.html">
+                            <Link to={'/Insights_Page'}>
                                 <img src="insight.png" alt="Insights" className="HomePage_NavigationIcon" />
                                 Insights
-                            </a>
+                            </Link>
                         </li>
                         <li>
                             <Link to={'/Customers_Page'}>
@@ -50,7 +50,7 @@ function Home_Page() {
                     </ul>            
 
                     <div className="HomePage_UserInfo">
-                        <a href="profile.html" className="HomePage_UserAccount">
+                        <a className="HomePage_UserAccount">
                             <img src="useravatar.png" alt="User Profile" className="HomePage_UserAvatar" />
                             <span>Juan Dela Cruz</span>
                         </a>

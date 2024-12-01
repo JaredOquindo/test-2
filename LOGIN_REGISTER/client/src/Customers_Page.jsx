@@ -23,16 +23,16 @@ function Customers_Page(){
                             </Link>
                         </li>
                         <li>
-                            <a href="../bookmarks/bookmarks.html">
+                            <Link to ={'/Bookmark_Page'}>
                                 <img src="bookmark.png" alt="Bookmarks" className="HomePage_NavigationIcon" />
                                 Bookmarks
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="../insights/insights.html">
+                            <Link to={'/Insights_Page'}>
                                 <img src="insight.png" alt="Insights" className="HomePage_NavigationIcon" />
                                 Insights
-                            </a>
+                            </Link>
                         </li>
                         <li>
                             <Link to={'/Customers_Page'}>
@@ -49,7 +49,7 @@ function Customers_Page(){
           </ul>
 
           <div className="userinfo">
-            <a href="profile.html" className="userAcc">
+            <a className="userAcc">
               <img src="useravatar.png" alt="User Profile" className="user-avatar" />
               <span>Juan Dela Cruz</span>
             </a>
